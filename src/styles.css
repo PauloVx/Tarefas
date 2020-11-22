@@ -1,1 +1,188 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+:root {
+  --bg-color: #1FA2FF;
+  --bg-mid-color: #12D8FA;
+  --bg-final-color: #A6FFCB;
+  --text-color: #111827;
+}
+
+:root.dark-mode {
+  --bg-color: #000;
+  --bg-mid-color: ;
+  --bg-final-color: #434343;
+  --text-color: #DDD;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+  font-weight: 300;
+  text-align: center;
+
+  background: var(--bg-color);
+  background: linear-gradient(150deg, var(--bg-color) 0%, var(--bg-mid-color) 50%, var(--bg-final-color) 100%);
+}
+
+ul {
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+}
+
+ul p small {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 6em;
+  font-family: 'Dancing Script', cursive;
+
+  color: #FFF;
+  text-shadow: 3px 4px #000;
+}
+
+.card {
+  border-radius: 8px;
+  background: #EEF;
+  color: #111827;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+
+  padding: 20px;
+  margin-bottom: 10px;
+
+  width: 350px;
+
+  overflow: hidden;
+}
+
+.todo-card {
+  height: 30px;
+  padding: 20px 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 1000px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 145px;
+  height: 100%;
+  background: #1FA2FF;
+  color: #FFF;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+
+  transition: transform .2s, opacity .2s;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  opacity: 0.6;
+}
+
+.btn-dark {
+  background: #434343;
+}
+
+.btn-light {
+  background: #DDD;
+  color: #666;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.btn i {
+  margin-right: 5px;
+}
+
+.todo-btn {
+  background: transparent;
+  border: none;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+
+  font-size: 1.2em;
+  transition: transform .2s, background-color .2s;
+}
+.todo-btn:hover {
+  color: #000;
+  transform: scale(0.95);
+}
+
+.todo-btn-group {
+  width: 20%;
+}
+
+
+.new-todo-form {
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 190px;
+}
+
+.new-todo-form fieldset {
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+}
+
+.new-todo-form fieldset button {
+  height: 50px;
+}
+
+.new-todo-form fieldset .form-input-group {
+  width: 100%;
+  height: 60%;
+}
+
+.new-todo-form fieldset .form-input-group input {
+  padding: 0 15px;
+  margin-top: 10px;
+
+  outline: none;
+  border: none;
+  border-radius: 8px;
+
+  height: 50px;
+  width: 90%;
+
+  border: 1px solid #999;
+}
+
+.new-todo-form fieldset .form-input-group label {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.new-todo-form fieldset .form-input-group small {
+  color: red;
+  font-weight: bold;
+}
+
