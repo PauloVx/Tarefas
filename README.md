@@ -1,27 +1,23 @@
-# Todo
+# **Angular Tarefas**
+## App de lista de tarefas feito em angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
+## Executar
+1. Executar o comando yarn/npm install para instalar as dependencias.
+2. Executar o comando ng serve e abrir o navegador em localhost:4200
 
-## Development server
+### Tecnologias utilizadas
+* HTML.
+* CSS.
+* Angular.
+* Typescript.
+* NodeJs.
+* AnimateCSS.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Features:
+* Darkmode e Tarefas salvos no localstorage.
+* Design responsivo.
+* Capacidade de criar, deletar e  marcar tarefas como concluídas.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Screenshots.
+![create](https://user-images.githubusercontent.com/49623348/100629887-95beda80-3308-11eb-8d0f-0d90d2aa7989.png)
+![main](https://user-images.githubusercontent.com/49623348/100629892-97889e00-3308-11eb-8388-4aecdb1f7dd4.png)
